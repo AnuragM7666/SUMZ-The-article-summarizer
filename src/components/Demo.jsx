@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 
 import { copy, linkIcon, loader, tick } from "../assets";
 import { useLazyGetSummaryQuery } from "../services/article";
+import SubmitButton from "../assets/SubmitButton";
 
 const Demo = () => {
   const [article, setArticle] = useState({
@@ -81,13 +82,11 @@ const Demo = () => {
             onKeyDown={handleKeyDown}
             required
             className='url_input peer' // When you need to style an element based on the state of a sibling element, mark the sibling with the peer class, and use peer-* modifiers to style the target element
-          />
-          <button
+          /> 
+          <SubmitButton
             type='submit'
-            className='submit_btn peer-focus:border-gray-700 peer-focus:text-gray-700 '
           >
-            <p>↵</p>
-          </button>
+          </SubmitButton>
         </form>
 
         {/* Browse History */}
