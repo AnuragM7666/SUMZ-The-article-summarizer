@@ -56,6 +56,11 @@
     opacity: 0.15;
 }
 
+.footer {
+    background-color: black;
+    height: 150px;
+}
+
 @media screen and (max-width: 640px) {
     .main {
         padding: 0;
@@ -113,4 +118,20 @@
 
 .summary_box {
     @apply rounded-xl border border-gray-200 bg-white/20 custom-inset-shadow backdrop-blur p-4;
+}
+
+
+.footer{
+    background-color: black !important;
+    background-image: none !important;
+    filter: none !important;
+    opacity: 1 !important;
+    width: 100%;
+    padding-top: 1.5rem /* 24px */;
+    padding-bottom: 1.5rem /* 24px */;
+    display: flex;
+    align-items: center;
+    z-index: 10;
+    position: relative;
+    justify-content: center;
 }
