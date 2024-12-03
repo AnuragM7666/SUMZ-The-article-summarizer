@@ -5,7 +5,7 @@ import "../App.css"
 
 const Footer = () => {
   return (
-    <footer className=" footer">
+    <footer className="footer">
       <div className="flex items-center justify-center space-x-10">
         <a
           href="https://www.instagram.com/ace_anurag.18/"
